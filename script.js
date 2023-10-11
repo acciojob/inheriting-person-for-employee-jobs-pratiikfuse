@@ -10,11 +10,11 @@ function Employee(name, age, jobTitle) {
 	this.jobTitle = jobTitle;
 }
 
-Person.greet= function(){
+Person.prototype.greet= function(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 }
 
-Employee.jobGreet = function(){
+Employee.prototype.jobGreet = function(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 } 
 // Do not change code below this line
