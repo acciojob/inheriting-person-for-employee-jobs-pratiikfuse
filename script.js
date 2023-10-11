@@ -10,12 +10,12 @@ function Employee(name, age, jobTitle) {
 	this.jobTitle = jobTitle;
 }
 
-Person.prototype.greet= function(){
-	return (`Hello, my name is ${this.name}, I am ${this.age} years old.`)
+Person.__proto__.greet= function(){
+	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 }
 
-Employee.prototype.jobGreet = function(){
-	return (`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+Employee.__proto__.jobGreet = function(){
+	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 } 
 // Do not change code below this line
 window.Person = Person;
