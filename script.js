@@ -11,8 +11,8 @@ function Employee(name, age, jobTitle) {
 }
 
 Person.prototype.greet= function(){
-	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
-	alert(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
+	console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`)
+	// alert(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 }
 
 Employee.prototype.jobGreet = function(){
